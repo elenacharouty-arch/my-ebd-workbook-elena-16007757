@@ -1,3 +1,5 @@
+// 05-strings-json — your work goes in this file.
+
 export function shout(text) {
   return text.trim().toUpperCase();
 }
