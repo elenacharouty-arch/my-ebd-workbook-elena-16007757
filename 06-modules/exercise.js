@@ -1,3 +1,4 @@
+
 import shopName, { products, formatEGP } from "./catalog.js";
 
 export function productCount() {

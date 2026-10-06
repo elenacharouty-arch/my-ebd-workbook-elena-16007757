@@ -1,3 +1,4 @@
+
 export function halfPrice(amount) {
   return amount / 2;
 }
