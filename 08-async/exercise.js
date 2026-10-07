@@ -1,3 +1,4 @@
+
 import { findProduct, findAllProducts } from "./fake-db.js";
 
 export async function productName(id) {
