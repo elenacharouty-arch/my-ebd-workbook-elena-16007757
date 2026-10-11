@@ -1,42 +1,77 @@
-/* 10-css — your work goes in this file.
- *
- * The lesson is example.css:      npm run open 10
- * See your own page with:         npm run open 10 exercise
- * Check your work with:           npm test 10
- *
- * exercise.html is written for you and must not be edited. Every class and
- * element named below already exists in it.
- *
- * Write each rule where its TODO is, then delete the TODO comment. The exact
- * colours, sizes and fonts are yours to choose unless a TODO says otherwise —
- * make it look like something you would not be embarrassed by.
- *
- * Keep the page open in the browser and refresh after each change.
- */
+/* 10-css — your styles go in this file. */
 
-/* TODO: a rule for `body` that sets
- *       font-family, color, and background-color. */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
 
-/* TODO: a rule for `.page` that sets
- *       max-width, and margin (use `0 auto` to centre it). */
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
 
-/* TODO: a rule for `header` that sets
- *       display: flex;
- *       justify-content: space-between;
- *       align-items: center;
- *       and one more property of your choosing. */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 2px solid #1a1a1a;
+}
 
-/* TODO: a rule for `nav a` — a descendant selector, so it only affects links
- *       inside the nav — that sets
- *       color, and text-decoration. */
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
 
-/* TODO: a rule for `.card-list` that sets
- *       display: flex;
- *       gap (any size);
- *       flex-wrap: wrap; */
+nav a {
+  color: #1a1a1a;
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 600;
+}
 
-/* TODO: a rule for `.card` that sets
- *       padding, border-radius, and background-color. */
+nav a:hover {
+  text-decoration: underline;
+}
 
-/* TODO: a rule for `.price` that sets
- *       color, and font-weight. */
+h2 {
+  margin-top: 32px;
+  font-size: 22px;
+}
+
+.card-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 200px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: 700;
+  color: #0a5c2e;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #cccccc;
+  color: #555555;
+  font-size: 14px;
+}
